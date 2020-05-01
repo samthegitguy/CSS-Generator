@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+## Welcome to CSS generator!
 
-You can use the [editor on GitHub](https://github.com/abhiprojectz/CSS-Generator/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+You can use this CSS tool to create awesome css codes including for*Shadows*, *Bordrrs*, & *Gradients tiles* !
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+##Example
 
-### Markdown
+#Shadows 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Shadows](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230509-2-2.jpg)
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+#Borders
 
-- Bulleted
-- List
+[Borders](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230513-1.jpg)
 
-1. Numbered
-2. List
+#Gradients tiles 
 
-**Bold** and _Italic_ and `Code` text
+[Gradients tiles](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230518.jpg)
 
-[Link](url) and ![Image](src)
-```
+You need to scroll up and down here! Select your favorite combo and just Tap to copy the code! 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+###Usage 
 
-### Jekyll Themes
+Tap to copy the code and insert it in your projects to make it look awesome!
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/abhiprojectz/CSS-Generator/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+##License
 
-### Support or Contact
+MIT
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
