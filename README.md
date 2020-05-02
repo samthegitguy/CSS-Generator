@@ -1,4 +1,4 @@
-# Welcome to CSS Geneartor!
+# Welcome to CSS Generator!
 
 This is a css tool to get css codes easily including *Shadows* , *Borders* , *Gradients tiles* and css + svgs Loaders collection!
 
