@@ -1,31 +1,60 @@
-## Welcome to CSS generator!
+# Welcome to CSS Geneartor!
 
-You can use this CSS tool to create awesome css codes including for*Shadows*, *Bordrrs*, & *Gradients tiles* !
+This is a css tool to get css codes easily including *Shadows* , *Borders* , *Gradients tiles* and css + svgs Loaders collection!
 
-###Example
+![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230509-2-2.jpg)
 
-#####Shadows 
+## Getting Started
 
-![Shadows](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230509-2-2.jpg)
+All you need is to just a *TAP* and the code gets copied to clipboard! 
 
+Best for even begginers.
 
-#Borders
+> Easy , fast & simple.
 
-![Borders](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230513-1.jpg)
+### Installing
 
-#Gradients tiles 
+There is nothing to install for this generator yet all codes are served on the frontend that is your Browser.
 
-![Gradients tiles](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230518.jpg)
+### Example 
 
-You need to scroll up and down here! Select your favorite combo and just Tap to copy the code! 
+To get a shadow code for somthing like this:
 
-###Usage 
+![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-02_103957-2.jpg)
 
-Tap to copy the code and insert it in your projects to make it look awesome!
+```
 
-##License
+box-shadow: 0px 0px 50px 9px #000000;
 
-MIT
+```
 
+*Want to edit ? 
 
+just drag the elements input range as per your requirement.
+
+![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-02_103957-1.jpg)
+
+## Screenshots
+
+![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230513-1.jpg)
+
+## Built With
+
+*HTML 
+
+*CSS 
+
+*JAVASCRIPT
+
+## Authors
+
+* **ABHI** * 
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Conclusion
+
+* If you find and bugs then do commit in issues.
 
