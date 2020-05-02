@@ -555,14 +555,21 @@ function copy(data) {
 	document.execCommand("copy");
 
 }
-$(".vactive").click({
+$(".vactive").click(function () {
 
-var copyText = this.html();
+	
 
+  var $temp = $("<input>");
 
-copyText.select();
+  $("body").append($temp);
 
-	document.execCommand("copy");
+  $temp.val(this.html()).select();
+
+  document.execCommand("copy");
+
+  $temp.remove();
+
+})
 
 </script>
 </html>
