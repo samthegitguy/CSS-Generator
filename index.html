@@ -555,6 +555,14 @@ function copy(data) {
 	document.execCommand("copy");
 
 }
+$(".vactive").click({
+
+var copyText = this.html();
+
+
+copyText.select();
+
+	document.execCommand("copy");
 
 </script>
 </html>
