@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>CSS Generator By Abhi!</title>
+      <!--    meta viewport for screen size configuration       -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--    External scripts       -->
+      <script src="https://kit.fontawesome.com/97cc306c60.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <!--   Stylesheet css path        -->
+      <link rel="stylesheet" href="css.css">
+   </head>
+   <body>
+      <!--  Toast notification starts  -->
+      <div id="toast">
+         <div id="img">   <i class="material-icons">info_outline</i></div>
+         <div id="desc"></div>
+      </div>
+      <!--  Loader's code -->
+      <div id="loader">
+         <div id="space">
+            <p style="color:#fff;text-align:center;font-family:Passion one;font-size:25px;">CSS  Generator</p>
+         </div>
+         <!--     Loader svg      -->
+         <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+            <g fill="none" fill-rule="evenodd" stroke-width="2">
+               <circle cx="22" cy="22" r="19.4407">
+                  <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"></animate>
+                  <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"></animate>
+               </circle>
+               <circle cx="22" cy="22" r="11.526">
+                  <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"></animate>
+                  <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"></animate>
+               </circle>
+            </g>
+         </svg>
+      </div>
+      <!--      Main project starts     -->
+      <div id="super"/>
+      <!--     Header code      -->
+      <div id="header">
+         <i id="menu" class="far fa-minus-square"></i>
+         <span id="title">CSS generator</span>
+         <i id="code" class="fas fa-code"></i>
+      </div>
+      <!--     Slider container      -->
+      <div class="slider">
+         <button class="bbtn" id="previous"><i class="fas fa-arrow-circle-left"></i></button>
+         <button class="bbtn" id="next"><i class="fas fa-arrow-circle-right"></i></button>
+         <div id="Shadows" class="slide active">
+            <!--    Shadow generator       -->
+            <div class="container">
+               <div class="tox" id="tox"></div>
+            </div>
+            <div class="panel">
+               <ul id="ccc">
+                  <li>Choose color: <input onchange="test(this)" type="color" value="#ff0000" id="color"/></li>
+                  <li>Blur: <br /> <input min="0" max="50" type="range" id="blur" value="0"/> </li>
+                  <li>Extend:<br /> <input min="0" max="50" type="range" id="ex" value="0"/> </li>
+                  <li>Horizontal length: <input type="range" min="0" max="50" id="hor" value="0"/></li>
+                  <li>Veritcal length:<input type="range" min="0" max="50" id="vertical" value="0"/>  </li>
+                  <li id="last">
+                     Outset   
+                     <label class="switch">
+                        <input onclick="check()" id="swiData" type="checkbox" /> 
+                        <div></div>
+                     </label>
+                     Inset
+                  </li>
+               </ul>
+               <input onclick="copy(this.id)" class="text" id="data"  type="text">
+               <p id="hint">*Tap to copy!</p>
+            </div>
+            <p id="info">© Made by Abhi || CSS generator </p>
+         </div>
+         <div id="Borders" class="slide">
+            <!--     Border generator      -->
+            <div class="container">
+               <div class="tox" id="dox"></div>
+            </div>
+            <div class="panel">
+               <div class="dropdown">
+                  <button onclick="show()" class="dropbtn">Select border style</button>
+                  <div id="Dropdown" class="dropdown-content">
+                     <ul class="option">
+                        <li>Solid</li>
+                        <li >Dashed</li>
+                        <li>dotted</li>
+                        <li>double</li>
+                        <li>inset</li>
+                        <li>outset</li>
+                        <li>ridge</li>
+                        <li>inherit</li>
+                        <li>hidden</li>
+                        <li>groove</li>
+                        <li>none</li>
+                     </ul>
+                  </div>
+               </div>
+               <ul id="ccc">
+                  <li>Choose color: <input onchange="border(this)" type="color" value="#ff0000" id="Bcolor"/></li>
+                  <hr>
+                  <li>Border width: <input type="range" min="0" max="50" id="width" value="0"/>  </li>
+                  <li>Top left: <br /> <input min="0" max="50" type="range" id="topL" value="0"/> </li>
+                  <li>Top right: <br /> <input min="0" max="50" type="range" id="topR" value="0"/> </li>
+                  <li>Bottom left : <input type="range" min="0" max="50" id="Bl" value="0"/></li>
+                  <li>Bottom right:<input type="range" min="0" max="50" id="Br" value="0"/>  </li>
+                  <li>Full corners: <input type="range" min="0" max="50" id="full" value="0"/>  </li>
+               </ul>
+               <input onclick="copy(this.id)" class="text" id="data-border"  type="text">
+               <input onclick="copy(this.id)" class="text" id="datborder"  type="text">
+            </div>
+            <p id="info">© Made by Abhi || CSS generator </p>
+         </div>
+         <div id="loaders Kit" class="slide">
+         	
+         
+         
+            <!--   Loaders collection!        -->
+            <!--   Vertical slider  -->
+            <div class="vslider">
+               <button class="vbbtn" id="vprevious"><i class="fas fa-arrow-circle-up"></i></button>
+               <button class="vbbtn" id="vnext"><i class="fas fa-arrow-circle-down"></i></button>
+               <div class="vslide vactive">
+           <svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+    <circle cx="15" cy="15" r="15">
+        <animate attributeName="r" from="15" to="15"
+                 begin="0s" dur="0.8s"
+                 values="15;9;15" calcMode="linear"
+                 repeatCount="indefinite" />
+        <animate attributeName="fill-opacity" from="1" to="1"
+                 begin="0s" dur="0.8s"
+                 values="1;.5;1" calcMode="linear"
+                 repeatCount="indefinite" />
+    </circle>
+    <circle cx="60" cy="15" r="9" fill-opacity="0.3">
+        <animate attributeName="r" from="9" to="9"
+                 begin="0s" dur="0.8s"
+                 values="9;15;9" calcMode="linear"
+                 repeatCount="indefinite" />
+        <animate attributeName="fill-opacity" from="0.5" to="0.5"
+                 begin="0s" dur="0.8s"
+                 values=".5;1;.5" calcMode="linear"
+                 repeatCount="indefinite" />
+    </circle>
+    <circle cx="105" cy="15" r="15">
+        <animate attributeName="r" from="15" to="15"
+                 begin="0s" dur="0.8s"
+                 values="15;9;15" calcMode="linear"
+                 repeatCount="indefinite" />
+        <animate attributeName="fill-opacity" from="1" to="1"
+                 begin="0s" dur="0.8s"
+                 values="1;.5;1" calcMode="linear"
+                 repeatCount="indefinite" />
+    </circle>
+</svg>
+               </div>
+               <div class="vslide">
+               <svg width="45" height="45" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+        <circle cx="22" cy="22" r="6" stroke-opacity="0">
+            <animate attributeName="r"
+                 begin="1.5s" dur="3s"
+                 values="6;22"
+                 calcMode="linear"
+                 repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity"
+                 begin="1.5s" dur="3s"
+                 values="1;0" calcMode="linear"
+                 repeatCount="indefinite" />
+            <animate attributeName="stroke-width"
+                 begin="1.5s" dur="3s"
+                 values="2;0" calcMode="linear"
+                 repeatCount="indefinite" />
+        </circle>
+        <circle cx="22" cy="22" r="6" stroke-opacity="0">
+            <animate attributeName="r"
+                 begin="3s" dur="3s"
+                 values="6;22"
+                 calcMode="linear"
+                 repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity"
+                 begin="3s" dur="3s"
+                 values="1;0" calcMode="linear"
+                 repeatCount="indefinite" />
+            <animate attributeName="stroke-width"
+                 begin="3s" dur="3s"
+                 values="2;0" calcMode="linear"
+                 repeatCount="indefinite" />
+        </circle>
+        <circle cx="22" cy="22" r="8">
+            <animate attributeName="r"
+                 begin="0s" dur="1.5s"
+                 values="6;1;2;3;4;5;6"
+                 calcMode="linear"
+                 repeatCount="indefinite" />
+        </circle>
+    </g>
+</svg>
+               </div>
+               <div class="vslide">
+                  <svg width="135" height="140" viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+    <rect y="10" width="15" height="120" rx="6">
+        <animate attributeName="height"
+             begin="0.5s" dur="1s"
+             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
+             repeatCount="indefinite" />
+        <animate attributeName="y"
+             begin="0.5s" dur="1s"
+             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
+             repeatCount="indefinite" />
+    </rect>
+    <rect x="30" y="10" width="15" height="120" rx="6">
+        <animate attributeName="height"
+             begin="0.25s" dur="1s"
+             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
+             repeatCount="indefinite" />
+        <animate attributeName="y"
+             begin="0.25s" dur="1s"
+             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
+             repeatCount="indefinite" />
+    </rect>
+    <rect x="60" width="15" height="140" rx="6">
+        <animate attributeName="height"
+             begin="0s" dur="1s"
+             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
+             repeatCount="indefinite" />
+        <animate attributeName="y"
+             begin="0s" dur="1s"
+             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
+             repeatCount="indefinite" />
+    </rect>
+    <rect x="90" y="10" width="15" height="120" rx="6">
+        <animate attributeName="height"
+             begin="0.25s" dur="1s"
+             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
+             repeatCount="indefinite" />
+        <animate attributeName="y"
+             begin="0.25s" dur="1s"
+             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
+             repeatCount="indefinite" />
+    </rect>
+    <rect x="120" y="10" width="15" height="120" rx="6">
+        <animate attributeName="height"
+             begin="0.5s" dur="1s"
+             values="120;110;100;90;80;70;60;50;40;140;120" calcMode="linear"
+             repeatCount="indefinite" />
+        <animate attributeName="y"
+             begin="0.5s" dur="1s"
+             values="10;15;20;25;30;35;40;45;50;0;10" calcMode="linear"
+             repeatCount="indefinite" />
+    </rect>
+</svg>  
+               </div>
+               <div class="vslide">
+                  <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+    <g fill="none" fill-rule="evenodd" stroke-width="2">
+        <circle cx="22" cy="22" r="1">
+            <animate attributeName="r"
+                begin="0s" dur="1.8s"
+                values="1; 20"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.165, 0.84, 0.44, 1"
+                repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity"
+                begin="0s" dur="1.8s"
+                values="1; 0"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.3, 0.61, 0.355, 1"
+                repeatCount="indefinite" />
+        </circle>
+        <circle cx="22" cy="22" r="1">
+            <animate attributeName="r"
+                begin="-0.9s" dur="1.8s"
+                values="1; 20"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.165, 0.84, 0.44, 1"
+                repeatCount="indefinite" />
+            <animate attributeName="stroke-opacity"
+                begin="-0.9s" dur="1.8s"
+                values="1; 0"
+                calcMode="spline"
+                keyTimes="0; 1"
+                keySplines="0.3, 0.61, 0.355, 1"
+                repeatCount="indefinite" />
+        </circle>
+    </g>
+</svg>
+               </div>
+               <div class="vslide">
+                  <svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+ <path fill="#fff" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
+  c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
+      <animateTransform 
+         attributeName="transform" 
+         attributeType="XML" 
+         type="rotate"
+         dur="2s" 
+         from="0 50 50"
+         to="360 50 50" 
+         repeatCount="indefinite" />
+  </path>
+ <path fill="#fff" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
+  c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
+      <animateTransform 
+         attributeName="transform" 
+         attributeType="XML" 
+         type="rotate"
+         dur="1s" 
+         from="0 50 50"
+         to="-360 50 50" 
+         repeatCount="indefinite" />
+  </path>
+ <path fill="#fff" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
+  L82,35.7z">
+      <animateTransform 
+         attributeName="transform" 
+         attributeType="XML" 
+         type="rotate"
+         dur="2s" 
+         from="0 50 50"
+         to="360 50 50" 
+         repeatCount="indefinite" />
+  </path>
+</svg>
+
+               </div>
+               <div class="vslide">
+       
+<svg version="1.1" id="L6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+   <rect fill="none" stroke="#fff" stroke-width="4" x="25" y="25" width="50" height="50">
+  <animateTransform
+     attributeName="transform"
+     dur="0.5s"
+     from="0 50 50"
+     to="180 50 50"
+     type="rotate"
+     id="strokeBox"
+     attributeType="XML"
+     begin="rectBox.end"/>
+  </rect>
+   <rect x="27" y="27" fill="#fff" width="46" height="50">
+  <animate
+     attributeName="height"
+     dur="1.3s"
+     attributeType="XML"
+     from="50" 
+     to="0"
+     id="rectBox" 
+     fill="freeze"
+     begin="0s;strokeBox.end"/>
+  </rect>
+</svg>
+
+               </div>
+               <div class="vslide">
+                  <svg version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+  <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+    <animateTransform 
+       attributeName="transform" 
+       dur="1s" 
+       type="translate" 
+       values="0 15 ; 0 -15; 0 15" 
+       repeatCount="indefinite" 
+       begin="0.1"/>
+  </circle>
+  <circle fill="#fff" stroke="none" cx="30" cy="50" r="6">
+    <animateTransform 
+       attributeName="transform" 
+       dur="1s" 
+       type="translate" 
+       values="0 10 ; 0 -10; 0 10" 
+       repeatCount="indefinite" 
+       begin="0.2"/>
+  </circle>
+  <circle fill="#fff" stroke="none" cx="54" cy="50" r="6">
+    <animateTransform 
+       attributeName="transform" 
+       dur="1s" 
+       type="translate" 
+       values="0 5 ; 0 -5; 0 5" 
+       repeatCount="indefinite" 
+       begin="0.3"/>
+  </circle>
+</svg>
+               </div>
+               <div class="vslide">
+            <svg version="1.1" id="L3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+<circle fill="none" stroke="#fff" stroke-width="4" cx="50" cy="50" r="44" style="opacity:0.5;"/>
+  <circle fill="#fff" stroke="#e74c3c" stroke-width="3" cx="8" cy="54" r="6" >
+    <animateTransform
+      attributeName="transform"
+      dur="2s"
+      type="rotate"
+      from="0 50 48"
+      to="360 50 52"
+      repeatCount="indefinite" />
+    
+  </circle>
+</svg>
+
+
+               </div>
+               <div class="vslide">
+               	<svg version="1.1" id="L2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<circle fill="none" stroke="#fff" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
+<line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
+  <animateTransform 
+       attributeName="transform" 
+       dur="2s"
+       type="rotate"
+       from="0 50 50"
+       to="360 50 50"
+       repeatCount="indefinite" />
+</line>
+<line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="49.5" y2="74">
+  <animateTransform 
+       attributeName="transform" 
+       dur="15s"
+       type="rotate"
+       from="0 50 50"
+       to="360 50 50"
+       repeatCount="indefinite" />
+</line>
+</svg>
+
+</div>
+
+<div class="vslide">
+	
+	<svg version="1.1" id="L1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+    <circle fill="none" stroke="#fff" stroke-width="6" stroke-miterlimit="15" stroke-dasharray="14.2472,14.2472" cx="50" cy="50" r="47" >
+      <animateTransform 
+         attributeName="transform" 
+         attributeType="XML" 
+         type="rotate"
+         dur="5s" 
+         from="0 50 50"
+         to="360 50 50" 
+         repeatCount="indefinite" />
+  </circle>
+  <circle fill="none" stroke="#fff" stroke-width="1" stroke-miterlimit="10" stroke-dasharray="10,10" cx="50" cy="50" r="39">
+      <animateTransform 
+         attributeName="transform" 
+         attributeType="XML" 
+         type="rotate"
+         dur="5s" 
+         from="0 50 50"
+         to="-360 50 50" 
+         repeatCount="indefinite" />
+  </circle>
+  <g fill="#fff">
+  <rect x="30" y="35" width="5" height="30">
+    <animateTransform 
+       attributeName="transform" 
+       dur="1s" 
+       type="translate" 
+       values="0 5 ; 0 -5; 0 5" 
+       repeatCount="indefinite" 
+       begin="0.1"/>
+  </rect>
+  <rect x="40" y="35" width="5" height="30" >
+    <animateTransform 
+       attributeName="transform" 
+       dur="1s" 
+       type="translate" 
+       values="0 5 ; 0 -5; 0 5" 
+       repeatCount="indefinite" 
+       begin="0.2"/>
+  </rect>
+  <rect x="50" y="35" width="5" height="30" >
+    <animateTransform 
+       attributeName="transform" 
+       dur="1s" 
+       type="translate" 
+       values="0 5 ; 0 -5; 0 5" 
+       repeatCount="indefinite" 
+       begin="0.3"/>
+  </rect>
+  <rect x="60" y="35" width="5" height="30" >
+    <animateTransform 
+       attributeName="transform" 
+       dur="1s" 
+       type="translate" 
+       values="0 5 ; 0 -5; 0 5"  
+       repeatCount="indefinite" 
+       begin="0.4"/>
+  </rect>
+  <rect x="70" y="35" width="5" height="30" >
+    <animateTransform 
+       attributeName="transform" 
+       dur="1s" 
+       type="translate" 
+       values="0 5 ; 0 -5; 0 5" 
+       repeatCount="indefinite" 
+       begin="0.5"/>
+  </rect>
+  </g>
+</svg>
+</div>
+
+               
+               <div class="vslide">
+               		<svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+    <path fill="#fff" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
+      <animateTransform 
+         attributeName="transform" 
+         attributeType="XML" 
+         type="rotate"
+         dur="1s" 
+         from="0 50 50"
+         to="360 50 50" 
+         repeatCount="indefinite" />
+  </path>
+</svg>
+
+</div>
+<div class="vslide">
+	<svg class="svg-calLoader" xmlns="http://www.w3.org/2000/svg" width="230" height="230"><path class="cal-loader__path" d="M86.429 40c63.616-20.04 101.511 25.08 107.265 61.93 6.487 41.54-18.593 76.99-50.6 87.643-59.46 19.791-101.262-23.577-107.142-62.616C29.398 83.441 59.945 48.343 86.43 40z" fill="none" stroke="#0099cc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 10 10 10 10 10 10 432" stroke-dashoffset="77"/><path class="cal-loader__plane" d="M141.493 37.93c-1.087-.927-2.942-2.002-4.32-2.501-2.259-.824-3.252-.955-9.293-1.172-4.017-.146-5.197-.23-5.47-.37-.766-.407-1.526-1.448-7.114-9.773-4.8-7.145-5.344-7.914-6.327-8.976-1.214-1.306-1.396-1.378-3.79-1.473-1.036-.04-2-.043-2.153-.002-.353.1-.87.586-1 .952-.139.399-.076.71.431 2.22.241.72 1.029 3.386 1.742 5.918 1.644 5.844 2.378 8.343 2.863 9.705.206.601.33 1.1.275 1.125-.24.097-10.56 1.066-11.014 1.032a3.532 3.532 0 0 1-1.002-.276l-.487-.246-2.044-2.613c-2.234-2.87-2.228-2.864-3.35-3.309-.717-.287-2.82-.386-3.276-.163-.457.237-.727.644-.737 1.152-.018.39.167.805 1.916 4.373 1.06 2.166 1.964 4.083 1.998 4.27.04.179.004.521-.076.75-.093.228-1.109 2.064-2.269 4.088-1.921 3.34-2.11 3.711-2.123 4.107-.008.25.061.557.168.725.328.512.72.644 1.966.676 1.32.029 2.352-.236 3.05-.762.222-.171 1.275-1.313 2.412-2.611 1.918-2.185 2.048-2.32 2.45-2.505.241-.111.601-.232.82-.271.267-.058 2.213.201 5.912.8 3.036.48 5.525.894 5.518.914 0 .026-.121.306-.27.638-.54 1.198-1.515 3.842-3.35 9.021-1.029 2.913-2.107 5.897-2.4 6.62-.703 1.748-.725 1.833-.594 2.286.137.46.45.833.872 1.012.41.177 3.823.24 4.37.085.852-.25 1.44-.688 2.312-1.724 1.166-1.39 3.169-3.948 6.771-8.661 5.8-7.583 6.561-8.49 7.387-8.702.233-.065 2.828-.056 5.784.011 5.827.138 6.64.09 8.62-.5 2.24-.67 4.035-1.65 5.517-3.016 1.136-1.054 1.135-1.014.207-1.962-.357-.38-.767-.777-.902-.893z" class="cal-loader__plane" fill="#000033"/></svg>
+
+</div>
+	
+               
+            </div>
+            
+            <!-- vertical slider end-->
+         </div>
+         <div class="slide" id="CSS Generator">
+            	<img src="https://dummyimage.com/600x400/000000/ffffff.png&text=More+tools+comming+soon!" id="l">
+            </div>
+      </div>
+   
+   <!--     JavaScript starts      -->
+   <script>
+      <!--    Main loader function's       -->
+          function loader() {
+	$("#loader").hide();
+	$("#super").show();
+}
+
+setTimeout(loader , 1000);
+
+        
+        
+      <!-- Toast notification script starts -->
+function toast(text) {
+	var x = document.getElementById("toast");
+	document.getElementById("desc").innerHTML = text;
+	x.className = "show";
+	setTimeout(function () {
+		x.className = x.className.replace("show", "");
+	}, 5000);
+}
+
+
+
+<!--     Slides script      -->
+
+
+var slides = $('.slide');
+slides.first().before(slides.last());
+<!--   Slider script  starts   -->
+<!--     Next slide starts      -->
+$('button').on('click', function () {
+	slides = $('.slide');
+	var button = $(this);
+	var activeSlide = $('.active');
+	var color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+	if (button.attr('id') == 'next') {
+		$('.slide').css("background-color", color);
+		$('#header').css("background-color", color);
+		slides.last().after(slides.first());
+		activeSlide.removeClass('active').next('.slide').addClass('active');
+		$("#title").html($(".active").attr('id'));
+	}
+
+
+	<!--     Next slides ends     -->
+
+
+	<!--    previous onchange slides script starts      -->
+	if (button.attr('id') == 'previous') {
+		$('.slide').css("background-color", color);
+		$('#header').css("background-color", color);
+		slides.first().before(slides.last());
+		activeSlide.removeClass('active').prev('.slide').addClass('active');
+		$("#title").html($(".active").attr('id'));
+	}
+});
+var list = document.querySelectorAll("ul.option li");
+Array.prototype.slice.call(list).forEach(function (listItem) {
+	listItem.addEventListener('click', function (e) {
+		$(".dropbtn").text(this.innerHTML)
+		updateout();
+	});
+});
+
+
+function show() {
+	document.getElementById("Dropdown").classList.toggle("show");
+}
+window.onclick = function (event) {
+	if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			}
+		}
+	}
+}
+
+function test(t) {
+	update(t.value);
+}
+$(document).on('input', '#blur', function () {
+	update($(this).val());
+});
+$(document).on('input', '#hor', function () {
+	update($(this).val());
+});
+$(document).on('input', '#vertical', function () {
+	update($(this).val());
+});
+$(document).on('input', '#ex', function () {
+	update($(this).val());
+});
+$(document).on('input', '#swiData', function () {
+	update($(this).val());
+});
+
+function update(data) {
+	var blur = document.getElementById("blur").value;
+	var horizontal = document.getElementById("hor").value;
+	var vertical = document.getElementById("vertical").value;
+	var spread = document.getElementById("ex").value;
+	var color = document.getElementById("color").value;
+	if (document.getElementById("swiData").checked) {
+		var output = "box-shadow: " + "inset " + horizontal + "px " + vertical + "px " + blur + "px " + spread + "px " + color + ";";
+	} else {
+		var output = "box-shadow: " + horizontal + "px " + vertical + "px " + blur + "px " + spread + "px " + color + ";";
+	}
+	$("#data").val(output);
+	$("#tox").css({
+		'box-shadow': horizontal + 'px ' + vertical + 'px ' + blur + 'px ' + spread + 'px ' + color
+	});
+}
+
+function border(t) {
+	updateout(t.value);
+}
+$(document).on('input', '#topL', function () {
+	updatebor($(this).val());
+});
+$(document).on('input', '#topR', function () {
+	updatebor($(this).val());
+});
+$(document).on('input', '#Bl', function () {
+	updatebor($(this).val());
+});
+$(document).on('input', '#Br', function () {
+	updatebor($(this).val());
+});
+$(document).on('input', '#width', function () {
+	updateout($(this).val());
+});
+$(document).on('input', '#full', function () {
+	updatefull($(this).val());
+});
+
+function updatebor(data) {
+	var topL = document.getElementById("topL").value;
+	var topR = document.getElementById("topR").value;
+	var bl = document.getElementById("Bl").value;
+	var br = document.getElementById("Br").value;
+	var borOutput = "border-radius: " + topL + "px " + topR + "px " + br + "px " + br + "px;";
+	$("#data-border").val(borOutput);
+	$("#dox").css({
+		'border-radius': topL + 'px ' + topR + 'px ' + bl + 'px ' + br + 'px '
+	});
+}
+
+function updatefull(data) {
+	var full = document.getElementById("full").value;
+	var borOutput = "border-radius: " + full + "px " + full + "px " + full + "px " + full + "px;";
+	$("#data-border").val(borOutput);
+	$("#dox").css({
+		'border-radius': full + "px " + full + "px " + full + "px " + full + "px"
+	});
+}
+
+function updateout(data) {
+	var color = document.getElementById("Bcolor").value;
+	var width = document.getElementById("width").value;
+	if ($(".dropbtn").html() === "Select border style") {
+		var type = "solid";
+	} else {
+		var type = $(".dropbtn").html();
+	}
+	var outpt = "border: " + width + "px " + type + " " + color + ";";
+	$("#datborder").val(outpt);
+	$("#dox").css({
+		'border': width + 'px ' + type + color
+	});
+}
+
+
+<!--  Vertical slides script -->
+
+
+var vslides = $('.vslide');
+vslides.first().before(vslides.last());
+$('button').on('click', function () {
+	vslides = $('.vslide');
+	var button = $(this);
+	var activevslide = $('.vactive');
+	var color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+	if (button.attr('id') == 'vnext') {
+		$('.vslide').css("background-color", color);
+		$('#header').css("background-color", color);
+		vslides.last().after(vslides.first());
+		activevslide.removeClass('vactive').next('.vslide').addClass('vactive');
+		$("#title").html($(".vactive").attr('id'));
+	}
+	if (button.attr('id') == 'vprevious') {
+		$('.vslide').css("background-color", color);
+		$('#header').css("background-color", color);
+		vslides.first().before(vslides.last());
+		activevslide.removeClass('vactive').prev('.vslide').addClass('vactive');
+		$("#title").html($(".vactive").attr('id'));
+	}
+});
+
+$("#code").click(function () {
+	swal("</> coded By Abhi for the community");
+})
+
+
+function copy(data) {
+	toast("Code successfully copied ✔");
+	var copyText = document.getElementById(data);
+	copyText.select();
+	document.execCommand("copy");
+}
+
+$("#code").click(function () {
+	
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val(this.html()).select();
+  document.execCommand("copy");
+  $temp.remove();
+
+})
+
+
+        	
+   </script>
+   
+   </body>
+</html>
+<!--   Project ends :)        -->
