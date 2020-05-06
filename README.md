@@ -38,7 +38,7 @@ just drag the elements input range as per your requirement.
 
 ![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-02_103957-1.jpg)
 
-##Svgs
+## Svgs
 
 ![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/unnamed%20(1).gif)
 
@@ -48,12 +48,12 @@ A loaders svgs collection just copy the code with a click & insert it into your 
 
 ## Screenshots
 
-#Borders:
+# Borders:
 
 ![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230513-1.jpg)
 
 
-#Loaders:
+# Loaders:
 
 ![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-06_171320_1.jpg)
 
