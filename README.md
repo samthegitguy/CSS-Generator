@@ -1,8 +1,12 @@
 # Welcome to CSS Generator!
 
-This is a css tool to get css codes easily including *Shadows* , *Borders* , *Gradients tiles* and css + svgs Loaders collection!
+![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/unnamed%20(2).gif)
+
+
+This is a css tools collection which can be used to get css codes snippets  easily & quikly including *Shadows* , *Borders* , *Gradients tiles* and Svgs Loaders collection!
 
 ![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230509-2-2.jpg)
+
 
 ## Getting Started
 
@@ -34,17 +38,35 @@ just drag the elements input range as per your requirement.
 
 ![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-02_103957-1.jpg)
 
+##Svgs
+
+![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/unnamed%20(1).gif)
+
+A loaders svgs collection just copy the code with a click & insert it into your project quickly
+
+
+
 ## Screenshots
+
+#Borders:
 
 ![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230513-1.jpg)
 
+
+#Loaders:
+
+![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-06_171320_1.jpg)
+
+
 ## Built With
 
-*HTML 
+*HTML*
 
-*CSS 
+*CSS*
 
-*JAVASCRIPT
+*JAVASCRIPT*
+
+![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/unnamed%20(3).gif)
 
 ## Authors
 
