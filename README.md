@@ -1,12 +1,16 @@
-# Welcome to CSS Generator!
+## Welcome to CSS Generator!
 
 ![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/unnamed%20(2).gif)
 
 
 This is a css tools collection which can be used to get css codes snippets  easily & quikly including *Shadows* , *Borders* , *Gradients tiles* and Svgs Loaders collection!
 
+
 ![](https://raw.githubusercontent.com/abhiprojectz/CSS-Generator/master/assets/Screenshot_2020-05-01_230509-2-2.jpg)
 
+# Try it:
+
+[live website](https://abhiprojectz.github.io/CSS-Generator/)
 
 ## Getting Started
 
